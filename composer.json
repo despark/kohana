@@ -13,9 +13,7 @@
         "openbuildings/jam-auth": "~0.2.3",
         "robmorgan/phinx": "~0.3.0"
     },
-    "require-dev": {
-        "openbuildings/functest": "~0.2.5"
-    },
+    "require-dev": {},
     "suggest": {
         "openbuildings/monetary": "Useful tool for formatting and converting currencies",
 
@@ -27,6 +25,9 @@
         "openbuildings/jam-closuretable": "Closuretable implementation for Jam ORM",
         "openbuildings/jam-locations": "Countries and Regions based on Jam and Closuretable",
         "openbuildings/jam-resource": "Resources for Jam ORM. Resources act as a bridge between routes, models and requests.",
+
+        "phpunit/phpunit": "The PHP unit testing framework",
+        "openbuildings/functest": "Functional Test for Kohana with PHPUnit and Spiderling",
 
         "openbuildings/services-manager": "Kohana Manager for external Services",
         "openbuildings/site-versions": "Different versions of a Kohana website on different domains",
