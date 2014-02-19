@@ -47,7 +47,9 @@
         "post-root-package-install": [
             "mkdir -p application/classes/Controller",
             "mkdir -p application/classes/Model",
-            "mkdir -p application/views"
+            "mkdir -p application/views",
+            "mdkir -p application/migrations",
+            "chmod 755 application/migrations"
         ]
     },
     "config": {
