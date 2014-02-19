@@ -1,0 +1,62 @@
+{
+    "name": "despark/kohana",
+    "license": "BSD-3",
+    "type": "project",
+    "description": "Kohana project template",
+    "require": {
+        "php": ">=5.3.3",
+        "kohana/core": "~3.3.1",
+        "kohana/database": "~3.3.1",
+        "kohana/auth": "~3.3.1",
+        "kohana/image": "~3.3.1",
+        "openbuildings/jam": "~0.4.46",
+        "openbuildings/jam-auth": "~0.2.3",
+        "robmorgan/phinx": "~0.3.0"
+    },
+    "require-dev": {
+		"openbuildings/functest": "~0.2.5"
+	},
+    "suggest": {
+    	"openbuildings/monetary": "Useful tool for formatting and converting currencies",
+
+    	"openbuildings/jam-monetary": "A Jam Field to transparently use 'monetary' as a Jam field, and have currency exchange arithmetic out of the box",
+    	"openbuildings/jam-taxonomy": "Taxonomy terms and vocabularies for Jam",
+    	"openbuildings/jam-freezable": "Freeze dynamic values in the database using Jam",
+    	"openbuildings/jam-generated-feed": "generate xml files based on a jam collection with a minion task",
+    	"openbuildings/jam-tart": "Jam Admin Builder",
+    	"openbuildings/jam-closuretable": "Closuretable implementation for Jam ORM",
+    	"openbuildings/jam-locations": "Countries and Regions based on Jam and Closuretable",
+    	"openbuildings/jam-resource": "Resources for Jam ORM. Resources act as a bridge between routes, models and requests.",
+
+    	"openbuildings/services-manager": "Kohana Manager for external Services",
+    	"openbuildings/site-versions": "Different versions of a Kohana website on different domains",
+
+    	"swiftmailer/swiftmailer": "Comprehensive mailing tools for PHP",
+    	"openbuildings/postmark": "Postmark transport for Swift Mailer",
+    	"openbuildings/swiftmailer-filter": "Swift Mailer plugin to whitelist/blacklist emails/domains",
+    	"openbuildings/swiftmailer-css-inliner": "Swift Mailer plugin to inline the CSS",
+    	"openbuildings/swiftmailer-google-campaign": "Swift Mailer plugin to automatically append Google campaign parameters to all email links"
+	},
+    "scripts": {
+        "post-install-cmd": [
+        	"rm -rf application/cache/*"
+        ],
+        "post-update-cmd": [
+        	"rm -rf application/cache/*"
+        ],
+        "post-create-project-cmd": [
+        	"mkdir modules",
+        	"mkdir -p application/classes/Controller",
+        	"mkdir -p application/classes/Model",
+        	"mkdir -p application/views",
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "kohana-app-dir": "application",
+        "kohana-web-dir": "public"
+    }
+}
