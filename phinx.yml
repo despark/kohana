@@ -8,7 +8,15 @@ environments:
         adapter: mysql
         host: localhost
         name: {{DATABASE_NAME}}
-        user: root
+        user: {{DATABASE_NAME}}
+        pass: ''
+        port: 3306
+
+    staging:
+        adapter: mysql
+        host: localhost
+        name: {{DATABASE_NAME}}
+        user: {{DATABASE_NAME}}
         pass: ''
         port: 3306
 
