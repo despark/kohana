@@ -159,19 +159,19 @@ Kohana::$shutdown_errors = (PHP_SAPI === 'cli')
 switch (Kohana::$environment)
 {
 	case Kohana::TESTING:
-		include APPPATH.'bootstrap.testing.php';
+		include APPPATH.'bootstrap.testing'.EXT;
 	break;
 
 	case Kohana::STAGING:
-		include APPPATH.'bootstrap.staging.php';
+		include APPPATH.'bootstrap.staging'.EXT;
 	break;
 
 	case Kohana::DEVELOPMENT:
-		include APPPATH.'bootstrap.development.php';
+		include APPPATH.'bootstrap.development'.EXT;
 	break;
 
 	case Kohana::PRODUCTION:
-		include APPPATH.'bootstrap.production.php';
+		include APPPATH.'bootstrap.production'.EXT;
 	break;
 }
 
@@ -185,13 +185,13 @@ umask(002);
  */
 if (in_array(Kohana::$environment, array(Kohana::DEVELOPMENT, Kohana::TESTING)))
 {
-	include 'routes.php';
+	include 'routes'.EXT;
 }
 else
 {
 	if ( ! Route::cache() OR ! Resource::cache())
 	{
-		include 'routes.php';
+		include 'routes'.EXT;
 
 		Route::cache(TRUE);
 
