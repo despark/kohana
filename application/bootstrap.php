@@ -129,7 +129,13 @@ Kohana::modules(array(
 	'minion'                     => MODPATH.'core/minion',      // Image manipulation
 ));
 
-Cookie::$salt = 'your-secret-salt-here';
+/**
+ * This is unique salt, which is auto-generated via a Composer script
+ *
+ * @var string
+ */
+Cookie::$salt = 'UNIQUE_COOKIE_SALT';
+
 Image::$default_driver = 'Imagick';
 Session::$default = 'cookie';
 HTML::$windowed_urls = TRUE;
