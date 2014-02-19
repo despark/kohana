@@ -1,0 +1,13 @@
+/vendor/
+
+/modules/jam/
+/modules/jam-auth/
+/modules/jam-tart/
+/modules/jam-closuretable/
+/modules/jam-locations/
+/modules/jam-monetary/
+/modules/jam-freezable/
+/modules/jam-generated-feed/
+/modules/services-manager/
+/modules/site-versions/
+/modules/functest/
