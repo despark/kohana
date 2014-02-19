@@ -45,6 +45,7 @@
             "rm -rf application/cache/*"
         ],
         "post-root-package-install": [
+            "sed -i '' \"s/your-secret-salt-here/$(cat \/dev\/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)/g\" application/bootstrap.php",
             "mkdir -p application/classes/Controller",
             "mkdir -p application/classes/Model",
             "mkdir -p application/views",
