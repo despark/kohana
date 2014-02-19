@@ -50,7 +50,8 @@
             "mkdir -p application/views",
             "mkdir -p application/migrations",
             "chmod 755 application/migrations",
-            "sed -i '' \"s/UNIQUE_COOKIE_SALT/$(openssl rand -base64 32 | sed 's/[\/=+]//g')/g\" application/bootstrap.php"
+            "sed -i '' \"s/UNIQUE_COOKIE_SALT/$(openssl rand -base64 32 | sed 's/[\/=+]//g')/g\" application/bootstrap.php",
+            "sed -i '' \"s/{{DATABASE_NAME}}/$(basename $PWD)/g\" application/config/database.php phinx.yml"
         ]
     },
     "config": {

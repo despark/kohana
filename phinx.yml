@@ -23,7 +23,7 @@ environments:
     testing:
         adapter: mysql
         host: localhost
-        name: {{DATABASE_NAME}}_testing
+        name: {{DATABASE_NAME}}_test
         user: root
         pass: ''
         port: 3306
