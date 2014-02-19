@@ -44,7 +44,7 @@
         "post-update-cmd": [
             "rm -rf application/cache/*"
         ],
-        "post-create-project-cmd": [
+        "post-root-package-install": [
             "mkdir -p application/classes/Controller",
             "mkdir -p application/classes/Model",
             "mkdir -p application/views"
