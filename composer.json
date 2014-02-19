@@ -1,6 +1,6 @@
 {
     "name": "despark/kohana",
-    "license": "BSD-3",
+    "license": "BSD-3-Clause",
     "type": "project",
     "description": "Kohana project template",
     "require": {
