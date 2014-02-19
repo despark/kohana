@@ -48,7 +48,7 @@
             "mkdir -p application/classes/Controller",
             "mkdir -p application/classes/Model",
             "mkdir -p application/views",
-            "mdkir -p application/migrations",
+            "mkdir -p application/migrations",
             "chmod 755 application/migrations",
             "sed -i '' \"s/your-secret-salt-here/$(openssl rand -base64 32 | sed 's/[\/=+]//g')/g\" application/bootstrap.php"
         ]
