@@ -48,7 +48,7 @@
         	"mkdir modules",
         	"mkdir -p application/classes/Controller",
         	"mkdir -p application/classes/Model",
-        	"mkdir -p application/views",
+        	"mkdir -p application/views"
         ]
     },
     "config": {
