@@ -138,17 +138,23 @@ Kohana::$shutdown_errors = (PHP_SAPI === 'cli')
 	? array()
 	: array(E_PARSE, E_ERROR, E_USER_ERROR, E_COMPILE_ERROR);
 
-Resource::$actions_map = array(
-	'collection' => array(
-		'index'  => 'get',
-		'new' => array('get', 'post'),
-	),
-	'member'     => array(
-		'show'   => array('get', 'post'),
-		'edit'   => array('get', 'post', 'put'),
-		'delete' => array('post', 'delete', 'get')
-	)
-);
+/**
+ * Example configuration of jam-resource.
+ * Useful if you don't want to use PUT and DELETE HTTP methods in forms.
+ *
+ * @var array
+ */
+// Resource::$actions_map = array(
+// 	'collection' => array(
+// 		'index'  => 'get',
+// 		'new' => array('get', 'post'),
+// 	),
+// 	'member'     => array(
+// 		'show'   => array('get', 'post'),
+// 		'edit'   => array('get', 'post', 'put'),
+// 		'delete' => array('post', 'delete', 'get')
+// 	)
+// );
 
 switch (Kohana::$environment)
 {
