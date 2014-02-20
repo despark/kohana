@@ -48,7 +48,6 @@
             "rm -rf application/cache/*"
         ],
         "post-create-project-cmd": [
-            "mkdir application/classes/Controller",
             "mkdir application/classes/Model",
             "mkdir application/views",
             "mkdir application/migrations",
