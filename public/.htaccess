@@ -88,8 +88,10 @@ AddType text/x-vcard                        vcf
     # MSIE masquerades as Netscape, but it is fine
     BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
-    # Make sure proxies don't deliver the wrong content
-    Header append Vary User-Agent env=!dont-vary
+    <IfModule mod_headers>
+        # Make sure proxies don't deliver the wrong content
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
 
     # Or, compress certain file types by extension:
     <files *.html>
