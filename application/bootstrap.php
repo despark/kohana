@@ -122,11 +122,11 @@ Kohana::modules(array(
 	// 'jam-freezable'              => MODPATH.'jam-freezable',
 
 	// CORE
-	'auth'                       => MODPATH.'core/auth',       // Basic authentication
-	'cache'                      => MODPATH.'core/cache',      // Caching with multiple backends
-	'database'                   => MODPATH.'core/database',   // Database access
-	'image'                      => MODPATH.'core/image',      // Image manipulation
-	'minion'                     => MODPATH.'core/minion',      // Image manipulation
+	'auth'                       => MODPATH.'auth',       // Basic authentication
+	'cache'                      => MODPATH.'cache',      // Caching with multiple backends
+	'database'                   => MODPATH.'database',   // Database access
+	'image'                      => MODPATH.'image',      // Image manipulation
+	// 'minion'                     => MODPATH.'minion',      // Image manipulation
 ));
 
 /**
