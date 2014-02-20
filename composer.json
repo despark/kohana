@@ -8,6 +8,7 @@
         "kohana/core": "~3.3.1",
         "kohana/database": "~3.3.1",
         "kohana/auth": "~3.3.1",
+        "kohana/cache": "~3.3.1",
         "kohana/image": "~3.3.1",
         "openbuildings/jam": "~0.4.46",
         "openbuildings/jam-auth": "~0.2.3",
