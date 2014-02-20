@@ -195,12 +195,13 @@ if (in_array(Kohana::$environment, array(Kohana::DEVELOPMENT, Kohana::TESTING)))
 }
 else
 {
-	if ( ! Route::cache() OR ! Resource::cache())
+	// if ( ! Route::cache() OR ! Resource::cache())
+	if ( ! Route::cache())
 	{
 		include 'routes'.EXT;
 
 		Route::cache(TRUE);
 
-		Resource::cache(TRUE);
+		// Resource::cache(TRUE);
 	}
 }
