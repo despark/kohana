@@ -2,7 +2,7 @@
 
 return array(
 	'driver' => 'jam',
-	'hash_algorithm' => PASSWORD_BCRYPT,
+	'hash_algorithm' => PASSWORD_DEFAULT,
 	'hash_options' => array(
 		'cost' => 10,
 	),
