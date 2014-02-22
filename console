@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+// Read Console component tutorial at
+// http://symfony.com/doc/current/components/console/introduction.html
+
+// Bootstrap Kohana
+// You might need Kohana modules and Kohana autoloading for some commands
+require __DIR__.'/public/index.php';
+
+// Use needed classes and commands to load into the Console Application
+use Symfony\Component\Console\Application;
+use App\Command\GreetCommand;
+
+// Create a new Console Application instance
+$application = new Application();
+
+// Attach commands to the Console Application instance
+$application->add(new GreetCommand);
+
+// Run the Console Application instance
+$application->run();
