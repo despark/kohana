@@ -99,7 +99,7 @@ AddType text/x-vcard                        vcf
     </files>
 </IfModule>
 
-<IfModule mod_rewrite>
+<IfModule mod_rewrite.c>
     # Turn on URL rewriting
     RewriteEngine On
 
