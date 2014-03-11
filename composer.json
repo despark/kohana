@@ -13,7 +13,8 @@
         "openbuildings/jam": "~0.4.46",
         "openbuildings/jam-auth": "~0.2.3",
         "robmorgan/phinx": "~0.3.0",
-        "ircmaxell/password-compat": "~1.0.3"
+        "ircmaxell/password-compat": "~1.0.3",
+        "symfony/console": "~2.4.0"
     },
     "require-dev": {},
     "suggest": {
@@ -58,6 +59,11 @@
     },
     "config": {
         "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Command\\": "application/Command"
+        }
     },
     "minimum-stability": "stable",
     "extra": {
