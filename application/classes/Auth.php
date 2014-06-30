@@ -12,6 +12,12 @@ abstract class Auth extends Kohana_Auth {
 
 	public function check_password($password)
 	{
+		$user = $this->get_user();
+
+		if ( ! $user) {
+			return false;
+		}
+
 		return password_verify($password, $this->hash($password));
 	}
 
