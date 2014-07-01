@@ -29,12 +29,12 @@ abstract class Auth extends Kohana_Auth {
 	 */
 	public function hash($str)
 	{
-		if ( ! $this->_config['hash_algorihtm'])
+		if ( ! $this->_config['hash_algorithm'])
 			throw new Kohana_Exception('A valid hash algorithm must be set in your auth config.');
 
 		return password_hash(
 			$str,
-			$this->_config['hash_algorihtm'],
+			$this->_config['hash_algorithm'],
 			Arr::get($this->_config, 'hash_options', array())
 		);
 	}
